@@ -40,6 +40,7 @@ $Source: $
 
 */
 #include <iostream>
+#include <iomanip>
 
 int main() {
     /* initializations */
@@ -52,40 +53,55 @@ int main() {
     std::cout << "age1 = " << age1 << ", age2 = " << age2 << ", age3 = " << age3 << std::endl;
 
     /* Basic datatypes */
+    std::cout << std::setfill('=') << "boolean type" << std::endl;
     bool bool_var {};
     std::cout << "size of bool = " << sizeof(bool_var) << " bytes" << std::endl;
+
+    std::cout << "char types" ;
     char char_var {};
     std::cout << "size of char = " << sizeof(char_var) << " bytes" << std::endl;
+    
     char16_t char16_t_var {};
     std::cout << "size of char16_t = " << sizeof(char16_t_var) << " bytes" << std::endl;
+    
     char32_t char32_t_var {};
     std::cout << "size of char32_t = " << sizeof(char32_t_var) << " bytes" << std::endl;
+    
     wchar_t wchar_t_var {};
     std::cout << "size of wchar_t = " << sizeof(wchar_t_var) << " bytes" << std::endl;
+    
     short short_var {};
     std::cout << "size of short = " << sizeof(short_var) << " bytes" << std::endl;
+    
     int int_var {};
     std::cout << "size of int = " << sizeof(int_var) << " bytes" << std::endl;
+    
     long long_var {};
     std::cout << "size of long = " << sizeof(long_var) << " bytes" << std::endl;
+    
     long long llong_var {};
     std::cout << "size of long long = " << sizeof(llong_var) << " bytes" << std::endl;
+    
     unsigned short ushort_var {};
     std::cout << "size of unsigned short = " << sizeof(ushort_var) << " bytes" << std::endl;
+    
     unsigned uint_var {};   // == unsigned int
     std::cout << "size of unsigned int = " << sizeof(uint_var) << " bytes" << std::endl;
+    
     unsigned long ulong_var {};
     std::cout << "size of unsigned long = " << sizeof(ulong_var) << " bytes" << std::endl;
+    
     unsigned long long ullong_var {};
     std::cout << "size of unsigned long long = " << sizeof(ullong_var) << " bytes" << std::endl;
+    
     float float_var {};
     std::cout << "size of float = " << sizeof(float_var) << " bytes" << std::endl;
+    
     double double_var {};
     std::cout << "size of double = " << sizeof(double_var) << " bytes" << std::endl;
+    
     long double ldouble_var {};
     std::cout << "size of long double = " << sizeof(ldouble_var) << " bytes" << std::endl;
-
-
 
     return 0;
 }
